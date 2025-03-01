@@ -85,3 +85,66 @@ body {
     }
 }
 
+
+#text-input {
+    margin-top: 16px;
+    background: radial-gradient(circle, rgba(25, 9, 255, 0.8), rgba(0, 0, 50, 0.9));
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(25, 9, 255, 0.7);
+}
+
+#chatbox {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(25, 9, 255, 0.7);
+}
+#chatbox {
+    background-color: black; /* Black background */
+    color: white; /* White text color */
+    border: 2px solid #00bfff; /* Initial blue border */
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#chatbox:focus {
+    box-shadow: 0 0 10px #00bfff; /* Glowing blue effect */
+    border-color: #00bfff;
+}
+
+
+#chatbox::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.glow-on-hover {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(25, 9, 255, 0.8);
+}
+
+.glow-on-hover:hover {
+    background: rgba(25, 9, 255, 0.3);
+    box-shadow: 0 0 20px rgba(25, 9, 255, 1);
+    transform: scale(1.1);
+}
+
