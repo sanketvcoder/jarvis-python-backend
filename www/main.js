@@ -49,4 +49,13 @@ $(document).ready(function () {
         $("#SiriWave").attr("hidden", false);
     });
 
+    $("#chatbox").keypress(function(event){
+        if (event.which == 13) {  // 13 is the Enter key
+            event.preventDefault(); // Prevent default form submission
+            var text = $(this).val();
+            // Send text to Python function using eel
+            eel.speak(text);
+        }
+    });
+
 });
